@@ -1,7 +1,14 @@
 # Data-Structures-Kotlin
 Basic data structures implementation in Kotlin
 
-## Stack
+1. [Basic Stack](#basic-stack)
+2. [Queue List](#queue-list)
+3. [Queue Linked List](#queue-linked-list)
+4. [Trees](#)
+5. [xx](#)
+
+   
+### Basic Stack
 
 We can create a generic `Stack` interface using a generic type of Any.
 
@@ -43,7 +50,7 @@ class StackImplementation<T:Any> : Stack<T> {
 }
 ```
 
-## Queue (List)
+### Queue List
 
 We need to create a generic `Queue` interface using a generic type of Any just like we did in `Stack` basic structure.
 
@@ -87,7 +94,7 @@ class QueueImplementation<T:Any> : Queue<T> {
 
 ***Note***: this implementation will work; however, implementing a `Queue` with normal Lists could be a performance issue due to eliminating the first element cause a copy operation to the other elements one position. One possible solution could be implementing this structure using `Linked List` in order to avoid this `O(n)` operation.
 
-## Queue (Linked List)
+### Queue Linked List
 
 A linked list is a chain of nodes which have a value and a reference to the next node in the list. Now, we can create a node class:
 
