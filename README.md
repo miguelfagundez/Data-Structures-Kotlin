@@ -4,8 +4,7 @@ Basic data structures implementation in Kotlin
 1. [Basic Stack](#basic-stack)
 2. [Queue List](#queue-list)
 3. [Queue Linked List](#queue-linked-list)
-4. Trees (***Under construction***...)
-5. [...](#)
+4. [Trees](#trees) (***Under construction***...)
 
    
 ### Basic Stack
@@ -176,3 +175,18 @@ class QueueLinkedListImplementation<T:Any> : Queue<T> {
 ```
 
 With this linked list implementation, we have only `0(1)` time complexity in enqueue and dequeue operations.
+
+### Trees
+
+First at all, we need to create a `Node` class with a generic type. A tree is a set of Nodes.
+
+```kotlin
+class TreeNode<T>(val node: T){
+
+// List of children
+   private val children : MutableList<TreeNode<T>> = mutableListOf()
+
+// Adding a new child
+   fun addChild(child: TreeNode<T>) = children.add(child)
+}
+```
